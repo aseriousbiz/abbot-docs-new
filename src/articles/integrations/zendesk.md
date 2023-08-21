@@ -42,7 +42,7 @@ In addition, you'll see the "Requester" that will be used on Zendesk, and the [Z
 
 Click the "Create" button and Abbot will start creating the ticket in the background.
 
-<img width="527" alt="image" src="/public/images/articles/integrations.zendesk/ticket-request-accepted.png">
+<img width="527" alt="image" src="/public/images/articles/_common/ticket-request-accepted.png">
 
 When the process is complete, Abbot will send you a direct message with a link to the new ticket
 

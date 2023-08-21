@@ -18,11 +18,11 @@ Go to the [Integration Settings](https://app.ab.bot/settings/organization/integr
 
 On the HubSpot integration page, click "Install" to log in to your HubSpot account and install the integration.
 
+<img src="/public/images/articles/integrations.hubspot/hubspot-install.png">
+
 > [!NOTE]
 > You must be a HubSpot Super Admin to install our integration services.
 > You may need to ask your HubSpot admin to install the integration for you.
-
-<img src="/public/images/articles/integrations.hubspot/hubspot-install.png">
 
 Then, click "Install" to install the necessary HubSpot elements.
 You'll be prompted to log in to your HubSpot account and allow Abbot access.
@@ -52,7 +52,7 @@ A new dialog will appear to allow you to enter a Subject and Description for the
 
 Click the "Create" button and Abbot will start creating the ticket in the background.
 
-<img width="527" alt="image" src="/public/images/articles/integrations.zendesk/ticket-request-accepted.png">
+<img width="527" alt="image" src="/public/images/articles/_common/ticket-request-accepted.png">
 
 When the process is complete, Abbot will send you a direct message with a link to the new ticket
 
@@ -64,7 +64,7 @@ This is a one-way sync, messages posted on HubSpot will **not** be posted to Sla
 Messages appear in HubSpot as custom timeline events on the ticket.
 They may not be visible by default, check the "Filter activity" dropdown on the Ticket Activity tab to make sure you can see events from Abbot:
 
-<img src="/public/images/integrations.hubspot/include-abbot-integration-activities.png">
+<img src="/public/images/articles/integrations.hubspot/include-abbot-integration-activities.png">
 
 ## Keeping Status in sync
 
@@ -79,7 +79,7 @@ You can configure a HubSpot Company for each room Abbot is monitoring by going t
 Then, scroll to "HubSpot Settings" and start typing the name of a company in your HubSpot account.
 The company must already exist in your HubSpot account to be linked:
 
-<img src="/public/images/integrations.hubspot/link-company.png">
+<img src="/public/images/articles/integrations.hubspot/link-company.png">
 
 Click the organization in the dropdown and it will be linked to the room. 
 Now any tickets opened from conversations in that room will automatically be associated with that HubSpot company. 
