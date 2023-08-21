@@ -1,0 +1,23 @@
+{
+  "name": "abbot-docs-new",
+  "version": "0.0.0",
+  "description": "Abbot (new) docs site",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-watch serve",
+    "serve": "script/helpers/run-server"
+  },
+  "watch": {
+    "serve": {
+      "patterns": [
+        "./src/**"
+      ],
+      "extensions": "js,html,css,md,svg,png,jpg,gif,yml,yaml,json",
+      "quiet": false,
+      "delay": 500
+    }
+  },
+  "devDependencies": {
+    "npm-watch": "^0.11.0"
+  }
+}

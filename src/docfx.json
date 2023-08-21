@@ -23,12 +23,6 @@
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md"
-        ]
-      },
-      {
-        "files": [
           "articles/**.md",
           "articles/**/toc.yml",
           "toc.yml",
@@ -39,16 +33,20 @@
     "resource": [
       {
         "files": [
-          "images/**"
+          "public/**"
         ]
       }
     ],
+    "globalMetadata": {
+      "_appLogoPath": "public/images/abbot-avatar-smaller.png"
+    },
     "output": "../_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "modern"
+      "modern",
+      "template"
     ],
     "postProcessors": [],
     "keepFileLink": false,
