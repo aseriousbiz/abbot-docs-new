@@ -2,9 +2,10 @@
 #/ Usage: script/img-place [uid] [name]
 #/ Description: Fetch 'url' and store it in 'images/[uid]/[name]'
 #/ Options
-#/   -u | --url [url]  - A URL of the image to download and place.
-#/   -c | --clip       - Grab the image from the clipboard and place it.
-#/   -r | --replace    - Scan for existing references to '[url]' and replace them with the local path. Ignored unless '--url' is used.
+#/   -u | --url [url]   - A URL of the image to download and place.
+#/   -p | --path [path] - A local path to an image to place.
+#/   -c | --clip        - Grab the image from the clipboard and place it.
+#/   -r | --replace     - Scan for existing references to '[url]' and replace them with the local path. Ignored unless '--url' is used.
 { set +x; } 2>/dev/null
 source_dir="$( cd -P "$( dirname "$0" )" >/dev/null 2>&1 && pwd )"
 root_dir=$(cd $source_dir && cd ../ && pwd)
@@ -28,6 +29,10 @@ while (( "$#" )); do
     ;;
     -u|--url)
         url=$1
+        shift
+    ;;
+    -p|--path)
+        path=$1
         shift
     ;;
     -\?|-h|--help)
@@ -80,6 +85,9 @@ if [ -n "$url" ]; then
         done
         echo "Updated files to reference the local image."
     fi
+elif [ -n "$path" ]; then
+    uid_dir="src/public/images/$uid"
+    cp "$path" "$uid_dir/$name"
 elif $clip; then
     if [ "$(uname)" = "Darwin" ]; then
         osascript -e "set png_data to the clipboard as «class PNGf»" \

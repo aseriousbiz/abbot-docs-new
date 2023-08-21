@@ -13,20 +13,20 @@ Abbot maintains a Timeline for each Conversation, capturing all the events that 
 The easiest way to access the Conversation timeline is via the "Manage Conversation" message shortcut.
 To access this, press the "triple-dot" menu for a message and select the "Manage Conversation" shortcut
 
-<img width="311" alt="Screen Shot 2022-06-30 at 3 50 41 PM" src="/public/images/conversation-management.timeline/manage-conversation-shortcut.png">
+<img width="311" alt="Screen Shot 2022-06-30 at 3 50 41 PM" src="/public/images/articles/conversation-management.timeline/manage-conversation-shortcut.png">
 
 > [!NOTE]
 > You may need to select "More message shortcuts…" to find the shortcut.
 
 If the message is not part of a conversation, you'll get an error message:
 
-<img width="535" alt="image" src="/public/images/conversation-management.timeline/error-not-a-convo.png">
+<img width="535" alt="image" src="/public/images/articles/conversation-management.timeline/error-not-a-convo.png">
 
 If the message is part of a conversation, you'll get some options.
 The specific options you see depends on the features enabled for your account, and what [Integrations](xref:integrations) you have configured.
 The first option, "View this conversation on ab.bot", is always present and will take you straight to the Conversation Timeline
 
-<img width="528" alt="image" src="/public/images/conversation-management.timeline/view-on-abbot.png">
+<img width="528" alt="image" src="/public/images/articles/conversation-management.timeline/view-on-abbot.png">
 
 ### From the Web UI
 
