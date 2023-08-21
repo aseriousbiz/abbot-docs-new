@@ -15,4 +15,5 @@ gh_endgroup
 
 gh_group "Generating site into '_site'..."
 docfx src/docfx.json
+cp staticwebapp.config.json _site
 gh_endgroup
