@@ -97,5 +97,12 @@ elif $clip; then
     fi
 fi
 
+img_tag="<img src=\"/public/images/articles/$uid/$name\">"
 echo "Image placed at: $destination_path"
-echo "Reference it with: '<img src=\"/public/images/articles/$uid/$name\">'"
+echo "Reference it with: '$img_tag'"
+if $clip; then
+    if [ "$(uname)" = "Darwin" ]; then
+        echo "$img_tag" | pbcopy
+        echo "The image tag has been copied to the clipboard."
+    fi
+fi

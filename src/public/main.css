@@ -1,0 +1,9 @@
+article img {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+article img.limit-width {
+    max-width: 60%;
+}

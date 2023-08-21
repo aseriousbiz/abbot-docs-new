@@ -9,6 +9,10 @@ So, what is a conversation?
 In Abbot, a Conversation is a set of chat messages that represent a single request, question or comment from a customer.
 Each new thread from a customer is assigned to a conversation, or creates a new conversation.
 
+> [!NOTE]
+> Before you can manage conversations with your customers in Slack, you need to install Abbot in to your Slack workspace.
+> See the [Quick Start](xref:quick-start) guide, or the [Slack Integration](xref:integrations.slack) documentation for more information.
+
 Currently, Abbot only supports conversation management in a Slack Connect channel shared with another organization, or in channels where there are guest users.
 When you create a shared channel and invite Abbot to it, you'll get a message asking you if you want to configure this room for conversation tracking.
 If you enable conversation tracking, Abbot will automatically create a new conversation for every top-level (i.e. not in a thread) message posted by someone *from outside your organization*.
