@@ -2,16 +2,12 @@
 uid: integrations.zendesk
 ---
 
-# Integrations
-
-Abbot provides integrations with third-party services.
-
-## Zendesk
+# Zendesk Integration
 
 You can use Abbot to create a Zendesk ticket from a Conversation.
 Once a Zendesk ticket is created, Abbot will keep replies in-sync between Slack and Zendesk.
 
-### Configuring the integration
+## Configuring the integration
 
 To configure the integration, you need to authorize our OAuth app.
 Only a Zendesk admin can authorize the app.
@@ -29,11 +25,11 @@ You'll be prompted to log in to your Zendesk account and allow Abbot access.
 
 Finally, select "Enable" to enable the integration.
 
-### Creating a Zendesk ticket for a conversation
+## Creating a Zendesk ticket for a conversation
 
 To create a Zendesk ticket from a conversation, select any message in the Slack thread for the conversation, open the "triple-dot" menu, and select "Manage Conversation"
 
-<img width="311" alt="Screen Shot 2022-06-30 at 3 50 41 PM" src="/public/images/articles/integrations.zendesk/manage-conversation-menu.png">
+<img src="/public/images/articles/_common/manage-conversation-menu.png">
 
 On the dialog that appears, select "Create Ticket":
 
@@ -54,18 +50,18 @@ When the process is complete, Abbot will send you a direct message with a link t
 
 If the Slack message is a thread with replies, Abbot imports every reply in the thread as a comment on the Zendesk ticket that it creates.
 
-### Keeping replies in sync
+## Keeping replies in sync
 
 After creating the initial ticket, Abbot will take any replies posted in Slack and push them to the Zendesk ticket.
 In addition, any Public Reply posted on the Zendesk ticket will be pushed back to the Slack thread.
 
 By default, Zendesk closes tickets after 28 days of inactivity. A closed Zendesk ticket cannot receive comments (Zendesk will create a new ticket). Therefore, Abbot will not push Slack replies to a closed Zendesk ticket.
 
-### Keeping Status in sync
+## Keeping Status in sync
 
 When a Zendesk Ticket is marked as `Solved`, the linked Abbot `Conversation` will also be `Closed`. If a customer (foreign member of a shared channel or a guest account) replies to the thread in Slack, the `Conversation` *and* the linked Zendesk ticket will be reopened.
 
-### Linking Zendesk organizations to rooms
+## Linking Zendesk organizations to rooms
 
 You can configure a Zendesk organization for each room Abbot is monitoring by going to the [Rooms list](https://app.ab.bot/settings/rooms). Find the room you want to configure, and select the "Settings" button:
 

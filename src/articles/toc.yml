@@ -31,5 +31,11 @@
 - name: Integrations
 - name: Introduction
   href: ./integrations/index.md
-- name: Zendesk Ticketing
-  href: ./integrations/zendesk.md
+- name: Ticketing
+  items:
+  - name: Zendesk
+    href: ./integrations/zendesk.md
+  - name: HubSpot
+    href: ./integrations/hubspot.md
+  - name: GitHub
+    href: ./integrations/github.md
