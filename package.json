@@ -10,9 +10,9 @@
   "watch": {
     "serve": {
       "patterns": [
-        "./src/*"
+        "./src/**"
       ],
-      "extensions": "js,html,css,md,svg,png,jpg,gif,yaml,json",
+      "extensions": "js,html,css,md,svg,png,jpg,gif,yml,yaml,json",
       "quiet": false,
       "delay": 500
     }

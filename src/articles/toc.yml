@@ -1,2 +1,35 @@
+- name: Get Started
+- name: Quick Start
+  href: ../index.md
+- name: The Basics
+  href: basics.md
+
+- name: Customer Management
+- name: Setting up Customers
+  href: customers/setup.md
+
+- name: Playbooks
+- name: What are Playbooks?
+  href: ./playbooks/index.md
+- name: Template Language
+  href: ./playbooks/template-language.md
+
+- name: Conversation Management
+- name: What is Conversation Management?
+  href: ./conversation-management/index.md
+- name: Conversation Timeline
+  href: ./conversation-management/timeline.md
+- name: First Responders
+  href: ./conversation-management/frs.md
+- name: Hubs
+  href: ./conversation-management/hubs.md
+- name: Response Times
+  href: ./conversation-management/response-times.md
+- name: Conversation States
+  href: ./conversation-management/states.md
+
+- name: Integrations
 - name: Introduction
-  href: intro.md
+  href: ./integrations/index.md
+- name: Zendesk Ticketing
+  href: ./integrations/zendesk.md
