@@ -16,11 +16,11 @@ Replies to that message will automatically be assigned to the same conversation.
 
 You can see these conversations on your [Dashboard](https://app.ab.bot), if you're a [First Responder](xref:conversation-management.frs):
 
-<img width="1280" alt="image" src="https://user-images.githubusercontent.com/7574/176784638-1980b712-460f-40ac-8819-deba49c15eaa.png">
+<img width="1280" alt="image" src="/public/images/conversation-management/fr-dashboard.png">
 
 If you select a conversation, you can see the [Conversation Timeline](xref:conversation-management.timeline), which is a record of all the activity that has occured in the conversation:
 
-<img width="1138" alt="image" src="https://user-images.githubusercontent.com/7574/176785200-ef4d8313-9b3b-42a6-9afa-632f4ab155e9.png">
+<img width="1138" alt="image" src="/public/images/conversation-management/timeline.png">
 
 In this example, "Serious Sam" asked a question, and "andrew" responded from the support team with a request for more information, which Serious Sam provided later.
 
@@ -30,7 +30,7 @@ In this example, "Serious Sam" asked a question, and "andrew" responded from the
 Abbot keeps track of who posted last in a conversation and uses that to help you identify the conversations that need attention right now.
 If you go to the [conversation list](http://app.ab.bot/conversations) ("Conversations" on the sidebar), you can see a number of tabs at the top:
 
-<img width="786" alt="image" src="https://user-images.githubusercontent.com/279389/207170973-67e6c902-a1e6-482f-bdbd-8b66b9b31512.png">
+<img width="786" alt="image" src="/public/images/conversation-management/conversation-tabs.png">
 
 These tabs let you view conversations in various states:
 

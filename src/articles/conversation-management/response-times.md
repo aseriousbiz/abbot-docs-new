@@ -20,7 +20,7 @@ To configure a Response Time for a room, you can use the [Abbot Dashboard](https
 To set a Response Time for a room, visit the [Room Settings](https://app.ab.bot/settings/organization/rooms) page.
 Here you can search for the room you want to manage and click "Settings" to manage Response Times and other room settings.
 
-<img width="1117" alt="image" src="https://user-images.githubusercontent.com/279389/207182679-bbfc8189-0fe5-4a44-ac03-37ccfbd628af.png">
+<img width="1117" alt="image" src="/public/images/conversation-management.response-times/room-settings.png">
 
 You can select a time in minutes, hours, or days. Default settings can be set in [Room Settings](https://app.ab.bot/settings/rooms).
 

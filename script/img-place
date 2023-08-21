@@ -1,0 +1,95 @@
+#!/bin/bash
+#/ Usage: script/img-place [uid] [name]
+#/ Description: Fetch 'url' and store it in 'images/[uid]/[name]'
+#/ Options
+#/   -u | --url [url]  - A URL of the image to download and place.
+#/   -c | --clip       - Grab the image from the clipboard and place it.
+#/   -r | --replace    - Scan for existing references to '[url]' and replace them with the local path. Ignored unless '--url' is used.
+{ set +x; } 2>/dev/null
+source_dir="$( cd -P "$( dirname "$0" )" >/dev/null 2>&1 && pwd )"
+root_dir=$(cd $source_dir && cd ../ && pwd)
+cd $root_dir
+source script/helpers/_utils.sh
+
+# Parse args
+uid=
+name=
+clip=false
+replace=false
+while (( "$#" )); do
+  key="$1"
+  shift
+  case "$key" in
+    -r|--replace)
+        replace=true
+    ;;
+    -c|--clip)
+        clip=true
+    ;;
+    -u|--url)
+        url=$1
+        shift
+    ;;
+    -\?|-h|--help)
+        grep '^#/' <"$0" | cut -c4-
+        exit
+    ;;
+    -*)
+        fatal "Unknown option: $key"
+    ;;
+    *)
+        if [ -z "$uid" ]; then
+            uid=$key
+        elif [ -z "$name" ]; then
+            name=$key
+        else
+            fatal "Unknown argument: $key"
+        fi
+    ;;
+  esac
+done
+
+if [ -z "$uid" ]; then
+    fatal "Missing argument: uid"
+fi
+
+if [ -z "$name" ]; then
+    fatal "Missing argument: name"
+fi
+
+# Fail if the name doesn't end with an image extension
+if ! [[ "$name" =~ \.(png|jpg|jpeg|gif|svg)$ ]]; then
+    fatal "The image name must end with an image extension (png, jpg, jpeg, gif, svg)."
+fi
+
+uid_dir="src/public/images/$uid"
+mkdir -p "$uid_dir"
+
+destination_path="$(cd "$uid_dir" && pwd)/$name"
+
+echo "Destination: $destination_path"
+
+if [ -n "$url" ]; then
+    # Fetch the URL
+    uid_dir="src/public/images/$uid"
+    curl -sSL -o "$uid_dir/$name" "$url"
+
+    if $replace; then
+        for file in $(find src -type f -name '*.md'); do
+            sed -i '' "s,$url,/public/images/$uid/$name,g" $file
+        done
+        echo "Updated files to reference the local image."
+    fi
+elif $clip; then
+    if [ "$(uname)" = "Darwin" ]; then
+        osascript -e "set png_data to the clipboard as «class PNGf»" \
+            -e "set the_file to open for access POSIX path of (POSIX file \"$destination_path\") with write permission" \
+            -e "write png_data to the_file" \
+            -e "close access the_file"
+    else
+        fatal "I don't know how to paste images on this platform."
+    fi
+fi
+
+echo "Image placed at: $destination_path"
+echo "Reference it with: '<img src=\"/public/images/$uid/$name\">'"

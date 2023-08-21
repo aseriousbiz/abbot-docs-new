@@ -13,16 +13,16 @@ Here, we'll focus on the basics and cover the variables that Abbot makes availab
 Any Playbook step that accepts text input can include a template.
 For example, the "Message" input for the "Send Message" step: 
 
-<img width="332" alt="image" src="https://github.com/aseriousbiz/abbot-docs/assets/7574/33b923cd-33de-4aa1-9920-02a3e9cdb9e5">
+<img width="332" alt="image" src="/public/images/playbooks.template-language/send-message.message-input.png">
 
 In addition, some drop-down inputs support pre-defined templates.
 For example, the "Channel" input for the "Send Message" step supports "Channel from Triggers" which is a template that will be replaced with the channel that triggered the Playbook:
 
-<img width="290" alt="image" src="https://github.com/aseriousbiz/abbot-docs/assets/7574/808b0e25-03ee-43ef-af5c-5c9862e851d0">
+<img width="290" alt="image" src="/public/images/playbooks.template-language/send-message.channel-input.png">
 
 Other steps _only_ support template values, such as the "Condition" in the "Continue If" step, which only allows a template from a predefined set of templates:
 
-<img width="295" alt="image" src="https://github.com/aseriousbiz/abbot-docs/assets/7574/b749b9f4-7b4c-445f-a447-94d01369dfb5">
+<img width="295" alt="image" src="/public/images/playbooks.template-language/continue-if.condition.png">
 
 All of these are implemented with templates, though you only need to write templates when using free-form text inputs.
 
@@ -111,7 +111,7 @@ The _first_ channel in the channel list is also available in the `trigger.output
 
 This allows you to send a message to a customer when you create their record in Abbot, for example:
 
-<img width="984" alt="image" src="https://github.com/aseriousbiz/abbot-docs/assets/7574/a4b8743c-77fc-4e66-9259-15c2f754c37e">
+<img width="984" alt="image" src="/public/images/playbooks.template-language/send-message-to-new-customer.png">
 
 The "Channel from triggers" here is equvalent to the template `trigger.outputs.channel.id`, so this will post a message to the first channel associated with the customer.
 This example assumes you've assigned a channel to the customer when you created their record in Abbot.
@@ -119,7 +119,7 @@ This example assumes you've assigned a channel to the customer when you created 
 There are also steps that _create_ channels, such as "Create Channel for Customer".
 These make the channel they create available in the `outputs.channel` variable, so you can use that in subsequent steps:
 
-<img width="1093" alt="image" src="https://github.com/aseriousbiz/abbot-docs/assets/7574/9d08e2ae-6819-4083-9e44-ec3d228a4205">
+<img width="1093" alt="image" src="/public/images/playbooks.template-language/reference-newly-created-channel.png">
 
 This example creates a new channel for the customer based on the prefix you specify and the name of the customer.
 For example, given a Customer name of `Funny Business` and a prefix of `cust-`, the channel name will be `cust-funny-business`.
