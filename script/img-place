@@ -98,4 +98,4 @@ elif $clip; then
 fi
 
 echo "Image placed at: $destination_path"
-echo "Reference it with: '<img src=\"/public/images/$uid/$name\">'"
+echo "Reference it with: '<img src=\"/public/images/articles/$uid/$name\">'"
