@@ -32,8 +32,6 @@ Click "Install" to install the GitHub App.
 Once you're back in the Abbot Dashboard, select the default repository to use when creating issues.
 You will be able to select a different repo when creating an issue from a conversation, but this will be the default.
 
-<img src="/public/images/articles/integrations.github/select-repo.png">
-
 Finally, click "Enable" to activate the integration.
 
 ## Creating a GitHub issue for a conversation
@@ -52,7 +50,7 @@ A new dialog will appear to allow you to choose the Repository and enter a Subje
 
 Click the "Create" button and Abbot will start creating the issue in the background.
 
-<img width="527" alt="image" src="/public/images/articles/_common/ticket-request-accepted.png">
+<img src="/public/images/articles/_common/ticket-request-accepted.png">
 
 When the process is complete, Abbot will send you a direct message with a link to the new issue.
 

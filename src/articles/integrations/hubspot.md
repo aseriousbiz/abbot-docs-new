@@ -44,15 +44,15 @@ To create a HubSpot ticket from a conversation, select any message in the Slack 
 
 On the dialog that appears, select "Create Ticket":
 
-<img width="533" alt="image" src="/public/images/articles/integrations.hubspot/create-ticket.png">
+<img src="/public/images/articles/integrations.hubspot/create-ticket.png">
 
 A new dialog will appear to allow you to enter a Subject and Description for the ticket.
 
-<img width="529" alt="image" src="/public/images/articles/integrations.hubspot/create-ticket-form.png">
+<img src="/public/images/articles/integrations.hubspot/create-ticket-form.png">
 
 Click the "Create" button and Abbot will start creating the ticket in the background.
 
-<img width="527" alt="image" src="/public/images/articles/_common/ticket-request-accepted.png">
+<img src="/public/images/articles/_common/ticket-request-accepted.png">
 
 When the process is complete, Abbot will send you a direct message with a link to the new ticket
 

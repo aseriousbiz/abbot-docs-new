@@ -14,11 +14,11 @@ Only a Zendesk admin can authorize the app.
 
 Go to the [Integration Settings](https://app.ab.bot/settings/organization/integrations) and click "Configure" on the "Zendesk" integration:
 
-<img width="1550" alt="image" src="/public/images/articles/integrations.zendesk/configure-zendesk.png">
+<img src="/public/images/articles/integrations.zendesk/configure-zendesk.png">
 
 On the Zendesk integration page, click "Configure" next to "Authentication Configured" and enter your Zendesk subdomain:
 
-<img width="1114" alt="image" src="/public/images/articles/integrations.zendesk/configure-credentials.png">
+<img src="/public/images/articles/integrations.zendesk/configure-credentials.png">
 
 Then, click "Install" to install the necessary Zendesk elements.
 You'll be prompted to log in to your Zendesk account and allow Abbot access.
@@ -33,20 +33,20 @@ To create a Zendesk ticket from a conversation, select any message in the Slack 
 
 On the dialog that appears, select "Create Ticket":
 
-<img width="533" alt="image" src="/public/images/articles/integrations.zendesk/create-ticket.png">
+<img src="/public/images/articles/integrations.zendesk/create-ticket.png">
 
 A new dialog will appear to allow you to enter a Subject and Description for the ticket.
 In addition, you'll see the "Requester" that will be used on Zendesk, and the [Zendesk Organization linked to the current room](#linking-zendesk-organizations-to-rooms), if any.
 
-<img width="529" alt="image" src="/public/images/articles/integrations.zendesk/create-ticket-form.png">
+<img src="/public/images/articles/integrations.zendesk/create-ticket-form.png">
 
 Click the "Create" button and Abbot will start creating the ticket in the background.
 
-<img width="527" alt="image" src="/public/images/articles/_common/ticket-request-accepted.png">
+<img src="/public/images/articles/_common/ticket-request-accepted.png">
 
 When the process is complete, Abbot will send you a direct message with a link to the new ticket
 
-<img width="693" alt="image" src="/public/images/articles/integrations.zendesk/ticket-link-dm.png">
+<img src="/public/images/articles/integrations.zendesk/ticket-link-dm.png">
 
 If the Slack message is a thread with replies, Abbot imports every reply in the thread as a comment on the Zendesk ticket that it creates.
 
@@ -68,8 +68,8 @@ You can configure a Zendesk organization for each room Abbot is monitoring by go
 
 Then, go to "Zendesk Settings" and start typing the name of an organization in your Zendesk account. The organization must already have been created in your Zendesk account:
 
-<img width="1523" alt="image" src="/public/images/articles/integrations.zendesk/select-organization.png">
+<img class="wide-image" src="/public/images/articles/integrations.zendesk/select-organization.png">
 
 Click the organization in the dropdown and it will be linked to the room. Now any tickets opened from conversations in that room will automatically be associated with that Zendesk organization. You can change the linked organization, or remove the link using the "Remove this link" button:
 
-<img width="1531" alt="image" src="/public/images/articles/integrations.zendesk/reset-organization.png">
+<img class="wide-image" src="/public/images/articles/integrations.zendesk/reset-organization.png">
