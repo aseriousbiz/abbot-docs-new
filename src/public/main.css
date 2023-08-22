@@ -44,18 +44,18 @@ main.container-xxl {
     padding: 1rem;
 }
 
-ol {
+article ol {
     position: relative;
     list-style: none;
     counter-reset: item;
 }
 
-ol > li {
+article ol > li {
   counter-increment: item;
   margin-bottom: 5px;
 }
 
-ol > li:before {
+article ol > li:before {
     margin-right: 10px;
     content: counter(item);
     font-weight: bold;
