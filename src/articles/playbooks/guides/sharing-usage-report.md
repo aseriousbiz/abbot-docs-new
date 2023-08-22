@@ -20,7 +20,7 @@ The first step is to add a Schedule trigger. Click "Add a trigger" on the canvas
 
 <img src="/public/images/articles/playbooks.guides.sharing-usage-report/add-trigger-panel.png">
 
-Click on the Schedule trigger to choose and configure it. In the screenshot below we're sticking with the defaults to run this daily at midnight in my timezone.
+Click on the Schedule trigger to choose and configure it. In the screenshot below we're sticking with the defaults to run this daily at noon in my timezone.
 
 <img src="/public/images/articles/playbooks.guides.sharing-usage-report/configure-schedule.png">
 
