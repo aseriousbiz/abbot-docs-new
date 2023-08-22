@@ -26,3 +26,11 @@ article img.wide-image {
 li.expanded ul {
     padding-bottom: initial;
 }
+
+main.container-xxl {
+    padding-top: 1rem;
+}
+
+.toc form.filter {
+    margin-bottom: initial;
+}
