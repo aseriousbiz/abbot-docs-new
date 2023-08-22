@@ -27,8 +27,8 @@
   href: ./playbooks/guides/monitoring-customer-inactivity.md
 - name: Managing Trials
   href: ./playbooks/guides/managing-trials.md
-- name: Customer Usage Stats
-  href: ./playbooks/guides/sharing-usage-stats.md
+- name: Customer Usage Report
+  href: ./playbooks/guides/sharing-usage-report.md
 
 - name: Customer Management
 - name: Customer Management in Abbot
