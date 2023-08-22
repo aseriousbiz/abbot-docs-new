@@ -32,5 +32,13 @@ main.container-xxl {
 }
 
 .toc form.filter {
-    margin-bottom: initial;
+    margin: 0.5rem;
+}
+
+.toc form.filter>input {
+   font-size: 0.8rem; 
+}
+
+.toc>.no-result {
+    padding: 1rem;
 }
