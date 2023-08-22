@@ -41,4 +41,4 @@ You can see all the permissions Abbot will request on the authorization screen (
 
 ## Using Abbot's integrations
 
-Once you've installed Abbot in your Slack workspace, you can start using [conversation management](xref:conversation-management) features and [playbooks](xref:playbooks) to manage your customer relationships.
+Once you've installed Abbot in your Slack workspace, you can start using [conversation management](xref:conversation-management) features and [Playbooks](xref:playbooks) to manage your customer relationships.
