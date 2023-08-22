@@ -8,3 +8,8 @@ article img {
 article img.wide-image {
     max-width: 100%;
 }
+
+.dropdown-menu.show {
+    left: inherit;
+    right: 0;
+}
