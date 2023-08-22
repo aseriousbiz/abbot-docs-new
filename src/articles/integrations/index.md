@@ -10,7 +10,7 @@ Abbot can create tickets in your ticketing system, manage conversations in chat 
 Configure your active integrations from the [Integration Settings](https://app.ab.bot/settings/organization/integrations) page.
 On this page you can see all the integrations available to your organization, enable and disable them, and configure them as needed:
 
-<img src="/public/images/integrations/integration-list.png">
+<img src="/public/images/articles/integrations/integration-list.png">
 
 ## Chat Integrations
 
