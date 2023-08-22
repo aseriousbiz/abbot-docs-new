@@ -39,7 +39,8 @@
     ],
     "globalMetadata": {
       "_appTitle": "Abbot",
-      "_appLogoPath": "public/images/abbot-avatar-smaller.png"
+      "_appLogoPath": "public/images/abbot-avatar-smaller.png",
+      "_appFaviconPath": "public/favicon.ico"
     },
     "output": "../_site",
     "globalMetadataFiles": [],

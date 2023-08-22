@@ -1,8 +1,9 @@
 article img {
     max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     display: flex;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 article img.wide-image {

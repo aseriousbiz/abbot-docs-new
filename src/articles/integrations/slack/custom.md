@@ -28,7 +28,7 @@ This is the name that the bot will use in Slack message.
 > If Abbot interacts with customers in your shared channels, this name will be visible to those customers.
 > Choose something that reflects your brand and is appropriate for your customers.
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/app-manifest-config.png">
+<img src="/public/images/articles/integrations.slack.custom/app-manifest-config.png">
 
 Click "Save Manifest" to save your changes.
 A "Manifest JSON" will appear below the form.
@@ -40,11 +40,11 @@ The Manifest JSON will be prefilled and you'll be ready to create your app.
 First, select the workspace you want to install the app in.
 Then, Slack will give you a chance to review the app's permissions and features:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/manifest-deploy-review.png">
+<img src="/public/images/articles/integrations.slack.custom/manifest-deploy-review.png">
 
 Select "Create" and Slack will confirm that the app has been created:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/manifest-deploy-confirm.png">
+<img src="/public/images/articles/integrations.slack.custom/manifest-deploy-confirm.png">
 
 Now, we've created a Custom Slack App in your organization to represent Abbot.
 Next, Abbot needs to know the credentials for this app so it can use it to interact with Slack.
@@ -54,7 +54,7 @@ Next, Abbot needs to know the credentials for this app so it can use it to inter
 Go to the [Slack App Dashboard](https://api.slack.com/apps) and select your new app.
 Scroll to "App Credentials" to collect four pieces of information from Slack's API dashboard page for the custom app:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/manifest-deploy-app-credentials.png">
+<img src="/public/images/articles/integrations.slack.custom/manifest-deploy-app-credentials.png">
 
 Create a text file to store these values, and copy the following values from the Slack dashboard into the file:
 
@@ -73,7 +73,7 @@ Now, **return** to the [Custom Slack App Integration Settings](https://app.ab.bo
 Click the "Set" button next to "Credentials configured" to go to the credential configuration page.
 Fill in the values you saved earlier:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/manifest-deploy-set-credentials.png">
+<img src="/public/images/articles/integrations.slack.custom/manifest-deploy-set-credentials.png">
 
 Click "Save Credentials" to save these values.
 
@@ -87,7 +87,7 @@ The app is now ready to be installed!
 
 Click the "Install" button to install your new custom Slack App in your workspace:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/install-button.png">
+<img src="/public/images/articles/integrations.slack.custom/install-button.png">
 
 > [!NOTE]
 > Only an Administrator of your Slack Workspace can perform this step.
@@ -103,13 +103,13 @@ So, before enabling the custom bot, we want to ensure it's invited to the same r
 
 Click "Manage Rooms" next to "Invited to rooms":
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/manage-rooms-button.png">
+<img src="/public/images/articles/integrations.slack.custom/manage-rooms-button.png">
 
 You'll see a list of all the rooms the original "Abbot" bot was invited to.
 You can check one or more of these rooms, or select the checkbox at the top to select all rooms.
 Then, click "Invite `@YourBotName`" to invite the custom bot to these rooms:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/invite-to-rooms.png">
+<img src="/public/images/articles/integrations.slack.custom/invite-to-rooms.png">
 
 With the bot invited to the rooms, you can now enable the bot.
 
@@ -117,11 +117,11 @@ With the bot invited to the rooms, you can now enable the bot.
 
 Go to the [Custom Slack App Integration Settings](https://app.ab.bot/settings/organization/integrations/slackapp) page and click "Enable" to enable your custom bot!
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/enable-button.png">
+<img src="/public/images/articles/integrations.slack.custom/enable-button.png">
 
 Test it out by going to a room where the bot is invited and typing `@YourBotName ping` to see if it responds.
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/ping-response.png">
+<img src="/public/images/articles/integrations.slack.custom/ping-response.png">
 
 ### Customizing your Bot's appearance
 
@@ -129,19 +129,19 @@ When using a custom app, you have complete control over your Bot's appearance.
 This includes it's display name, avatar, and background color.
 To configure this, go to the [Slack App Dashboard](https://api.slack.com/apps) and select your app.
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/api-dashboard-custom-app.png">
+<img src="/public/images/articles/integrations.slack.custom/api-dashboard-custom-app.png">
 
 Scroll to "Display Information" to configure the App Name, Description, Avatar, and Background Color:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/api-dashboard-display-information.png">
+<img src="/public/images/articles/integrations.slack.custom/api-dashboard-display-information.png">
 
 To customize the Bot's display name, hover your mouse over the bot's name in any message in Slack and select "Configuation" in the popup menu:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/slack-app-info-popup.png">
+<img src="/public/images/articles/integrations.slack.custom/slack-app-info-popup.png">
 
 Scroll down to "Bot User" and click "Edit" next to your bot's name to customize it.
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/slack-edit-bot-name.png">
+<img src="/public/images/articles/integrations.slack.custom/slack-edit-bot-name.png">
 
 ### Rotating App Secrets
 
@@ -156,7 +156,7 @@ Go to the [Custom Slack App Integration Settings](https://app.ab.bot/settings/or
 Then, click "Edit Settings".
 Leave this page open, and in a separate browser window, go to the [Slack App Dashboard](https://api.slack.com/apps) and select your app.
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/api-dashboard-custom-app.png">
+<img src="/public/images/articles/integrations.slack.custom/api-dashboard-custom-app.png">
 
 Scroll down to the "App Credentials" section and click "Regenerate" next to the secret you want to rotate.
 Then, copy the updated credential over to Abbot, and repeat with the other credential (if you want to rotate both).
@@ -164,4 +164,4 @@ Finally, click "Save Credentials" to save the new values.
 
 Click "Reinstall" to reinstall the app in your workspace:
 
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/reinstall-button.png">
+<img src="/public/images/articles/integrations.slack.custom/reinstall-button.png">
