@@ -1,8 +1,8 @@
 - name: Get Started
-- name: Quick Start
+- name: What is Abbot?
   href: ../index.md
-- name: The Basics
-  href: basics.md
+- name: Quick Start
+  href: quick-start.md
 
 - name: Customer Management
 - name: Setting up Customers
@@ -39,6 +39,10 @@
   href: ./conversation-management/response-times.md
 - name: Conversation States
   href: ./conversation-management/states.md
+- name: Announcements
+  href: ./announcements/index.md
+- name: Insights
+  href: ./insights/index.md
 
 - name: Integrations
 - name: Introduction
