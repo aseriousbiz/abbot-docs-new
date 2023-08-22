@@ -50,7 +50,7 @@ Select the "Channel from Trigger" condition and the "Exists" comparison. This en
 
 ## Gather Stats for the Report
 
-In this step, we need to gather your customer usage stats to send in the report. To do that, we need to run a skill. So the first step is to write a skill that calls out to an API you control to get these stats. To create a skill, click on "Skills" in the left navigation and click "Create new skill". In this example, we'll create a C# skill. To jump to the create page, [click here](https://app.ab.bot/skills/create/csharp). Give the skill a name, click "Create Skill", and then enter the following code in the Skill editor:
+In this step, we need to gather your customer usage stats to send in the report. To do that, we need to run a skill. A skill in Abbot is a way to run custom code that we host from chat or from a Playbook. So the first step is to write a skill that calls out to an API you control to get these stats. To create a skill, click on "Skills" in the left navigation (you might need an Administrator to enable skills first) and click "Create new skill". In this example, we'll create a C# skill. To jump to the create page, [click here](https://app.ab.bot/skills/create/csharp). Give the skill a name, click "Create Skill", and then enter the following code in the Skill editor:
 
 ```csharp
 if (Bot.Arguments is [{ Value: { } customerIdText}] && int.TryParse(customerIdText, out var customerId)) {
