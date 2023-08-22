@@ -15,6 +15,8 @@
   href: ./playbooks/index.md
 - name: Template Language
   href: ./playbooks/template-language.md
+- name: Importing Playbooks
+  href: ./playbooks/import.md
 
 - name: Playbook Guides
 - name: Introduction
