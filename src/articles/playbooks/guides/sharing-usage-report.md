@@ -16,7 +16,7 @@ Start by going to the [Playbooks page](https://app.ab.bot/playbooks) and click [
 
 > [!NOTE]
 > You can <a href="/public/playbooks/playbook.customer-usage-report.json" download>download the playbook referenced in this guide</a> and [import it](xref:playbooks.import) in to your workspace.
-> <div><a class="btn btn-secondary" href="https://app.ab.bot/playbooks/import#Input.Name=Customer%20Usage%20Report&Input.Description=Send%20a&%20weekly%20usage%report%20to%20each%20customer&Input.DefinitionUrl=https://docs.ab.bot/public/playbooks/playbook.playbook.customer-usage-report.json" target="_blank"><i class="bi bi-cloud-upload"></i> Import directly into Abbot now</a></div>
+> <div><a class="btn btn-secondary" href="https://app.ab.bot/playbooks/import#Input.Name=Customer%20Usage%20Report&Input.Description=Send%20a%20weekly%20usage%20report%20to%20every%20subscribed%20customer.&Input.DefinitionUrl=https://docs.ab.bot/public/playbooks/playbook.playbook.customer-usage-report.json" target="_blank"><i class="bi bi-cloud-upload"></i> Import directly into Abbot now</a></div>
 
 ## Add a Trigger
 
