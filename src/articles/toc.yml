@@ -31,5 +31,18 @@
 - name: Integrations
 - name: Introduction
   href: ./integrations/index.md
-- name: Zendesk Ticketing
-  href: ./integrations/zendesk.md
+- name: Slack
+  href: ./integrations/slack/index.md
+  items:
+    - name: Required Permissions
+      href: ./integrations/slack/access.md
+    - name: Customizing Abbot
+      href: ./integrations/slack/custom.md
+- name: Ticketing
+  items:
+  - name: Zendesk
+    href: ./integrations/zendesk.md
+  - name: HubSpot
+    href: ./integrations/hubspot.md
+  - name: GitHub
+    href: ./integrations/github.md

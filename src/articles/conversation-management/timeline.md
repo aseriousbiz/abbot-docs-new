@@ -20,13 +20,13 @@ To access this, press the "triple-dot" menu for a message and select the "Manage
 
 If the message is not part of a conversation, you'll get an error message:
 
-<img width="535" alt="image" src="/public/images/articles/conversation-management.timeline/error-not-a-convo.png">
+<img src="/public/images/articles/conversation-management.timeline/error-not-a-convo.png">
 
 If the message is part of a conversation, you'll get some options.
 The specific options you see depends on the features enabled for your account, and what [Integrations](xref:integrations) you have configured.
 The first option, "View this conversation on ab.bot", is always present and will take you straight to the Conversation Timeline
 
-<img width="528" alt="image" src="/public/images/articles/conversation-management.timeline/view-on-abbot.png">
+<img src="/public/images/articles/conversation-management.timeline/view-on-abbot.png">
 
 ### From the Web UI
 

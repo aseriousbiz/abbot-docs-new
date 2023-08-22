@@ -25,11 +25,11 @@ If you find a room that doesn't have Conversation Tracking enabled, this is also
 
 On the room settings page, you can view the active First Responders:
 
-<img width="1116" alt="image" src="/public/images/articles/conversation-management.frs/active-frs.png">
+<img src="/public/images/articles/conversation-management.frs/active-frs.png">
 
 To assign a new user, just start typing in the "Search for a user…" box, and then click to select the user:
 
-<img width="1115" alt="image" src="/public/images/articles/conversation-management.frs/add-fr.png">
+<img src="/public/images/articles/conversation-management.frs/add-fr.png">
 
 To remove a user, click the "Remove" button.
 
