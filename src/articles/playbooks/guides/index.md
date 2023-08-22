@@ -20,6 +20,6 @@ Well, in this set of guides, we provide a set of practical Playbooks you can sta
 
 // TODO
 
-## [Customer Usage Stats](./sharing-usage-stats.md)
+## [Customer Usage Stats](./sharing-usage-report.md)
 
 An advanced guide that shows you how to set up a scheduled Playbook to share usage stats with your customers every week
