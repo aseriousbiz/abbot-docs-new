@@ -47,6 +47,20 @@ These tabs let you view conversations in various states:
 These core tools give you and the rest of your team a quick at-a-glace interface to manage customer interactions on Slack.
 Abbot can do even more to help ensure your customers are happy!
 
+## Disabling Conversation Tracking
+
+By default, Abbot tracks conversations created by your customers in any channel Abbot is a member of.
+However, you can explicitly disable tracking for a given channel on the [Rooms page](https://app.ab.bot/settings/rooms).
+
+1. Click the ⚙️ Gear icon next to the room you wish to change settings for
+
+    <img src="/public/images/articles/conversation-management/gear-icon.png">
+
+2. Click "Stop Conversation Tracking".
+
+    <img src="/public/images/articles/conversation-management/stop-tracking.png">
+
+
 ## Next Steps
 
 * [Conversation Timeline](xref:conversation-management.timeline)

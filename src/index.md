@@ -13,7 +13,7 @@ Abbot gives you powerful tools for Customer Operations, within Slack and beyond.
 * [Conversation Management](xref:conversation-management) helps you manage conversations with your customers in Slack. Track conversations like tickets, or funnel them to your existing ticketing system. Triage incoming requests, assign conversations, and track SLAs.
 * [Announcements](xref:announcements) help you send messages to several channels at once. You can schedule announcements to go out at a specific time, or send them immediately. They're perfect for reporting outages, announcing new features, and more.
 * [Insights](xref:insights) help you understand how your team is performing. See how many conversations you're handling, how quickly you're responding, and more.
-* [Playbooks](xref:playbooks) help you automate your customer interactions across a wide range of use cases. You can use playbooks to automate onboarding, quarterly business reviews, inactivity alerts, and so more.
+* [Playbooks](xref:playbooks) help you automate your customer interactions across a wide range of use cases. You can use Playbooks to automate onboarding, quarterly business reviews, inactivity alerts, and so more.
 
 ## Get Started
 

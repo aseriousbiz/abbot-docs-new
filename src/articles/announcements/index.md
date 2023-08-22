@@ -23,9 +23,9 @@ Select "Create announcement" to open the "Create Announcement" dialog:
     If you've customized your Abbot Bot, this will use the custom name and avatar you've configured.
 
 * **Message Delivery**: How do you want to choose the channels you'll send the message to?
-    * **All Shared Channels** will send to all Slack Connect Channels in your workspace that Abbot is a member of.
+    * **All Shared Channels** will send to all Slack Connect Channels in your workspace that Abbot is a member of (except those for which you've [disabled Conversation Tracking](xref:conversation-management#disabling-conversation-tracking)).
     * **Pick Specific Channels** will allow you to select specific channels to send the message to.
-    * **Customer Segment** will allow you to select Customer Segments to send the message to.
+    * **Customer Segment** will allow you to select [Customer Segments](xref:customers.segments) to send the message to.
         Abbot will send the message to rooms associated with customers in the selected segments.
 
 * **Message Schedule**: When do you want to send the message?

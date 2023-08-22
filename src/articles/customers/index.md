@@ -7,14 +7,14 @@ uid: customers
 Abbot helps you track the Customers you work with in Slack.
 Manage customers from the [Customers tab in Abbot](https://app.ab.bot/customers).
 
-A Customer in Abbot can be associated with one or more Slack Channels.
-You can also group customers in to [Segments](xref:customers.segments) to make it easier to target [Playbooks](xref:playbooks) and [Announcements](xref:announcements) to specific groups of customers.
+A Customer in Abbot can be associated with one or more Slack channels.
+You can also group customers into [Segments](xref:customers.segments) to make it easier to target [Playbooks](xref:playbooks) and [Announcements](xref:announcements) to specific groups of customers.
 
 ## Create a Customer Record
 
 1. To create a customer record, start on the [Customers tab in Abbot](https://app.ab.bot/customers).
     Click "Create customer" to create a customer.
-    Later on, you can [customers for all your existing rooms](xref:customers.bulk-create), but for now let's start with a single one so you can see how it works.
+    Later on, you can [create customers for all your existing channels](xref:customers.bulk-create), but for now let's start with a single one so you can see how it works.
 
     <img src="/public/images/articles/quick-start.customer-setup/customers-tab.png">
 

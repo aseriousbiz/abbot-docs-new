@@ -11,7 +11,7 @@ In the [previous section](xref:quick-start.tracking-conversations), we showed yo
 
 1. To create a customer record, start on the [Customers tab in Abbot](https://app.ab.bot/customers).
     Click "Create customer" to create a customer.
-    Later on, you can [customers for all your existing rooms](xref:customers.bulk-create), but for now let's start with a single one so you can see how it works.
+    Later on, you can [create customers for all your existing rooms](xref:customers.bulk-create), but for now let's start with a single one so you can see how it works.
 
     <img src="/public/images/articles/quick-start.customer-setup/customers-tab.png">
 

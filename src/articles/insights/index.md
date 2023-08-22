@@ -15,7 +15,7 @@ In the filters at the top, you can choose to view Insights for:
 
 * **All Rooms** - All shared channels Abbot is a member of.
 * **Your Rooms** - Rooms for which you are a [First Responder](xref:conversation-management.frs) or [Escalation Responder](xref:conversation-management.frs#escalation-responders).
-* *A Specific Agent* - All Rooms for which that agent is a [First Responder](xref:conversation-management.frs) or [Escalation Responder](xref:conversation-management.frs#escalation-responders).
+* *A Specific Agent* (Admins only) - All Rooms for which that agent is a [First Responder](xref:conversation-management.frs) or [Escalation Responder](xref:conversation-management.frs#escalation-responders).
 * *A Specific Room* - A single room.
 
 You can also choose to filter by [Conversation Tag](xref:conversation-management.tags), which will show insights for all conversations involving a specific tag.
