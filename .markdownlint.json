@@ -8,9 +8,5 @@
     "ul-indent": {
         "indent": 4
     },
-    "no-inline-html": {
-        "allowed_elements": [
-            "img"
-        ]
-    }
+    "no-inline-html": false
 }

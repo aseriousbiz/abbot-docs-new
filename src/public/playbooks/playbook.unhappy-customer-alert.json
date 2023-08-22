@@ -1,0 +1,80 @@
+{
+  "triggers": [
+    {
+      "id": "abbot_conversation_sentiment",
+      "type": "abbot.conversation-sentiment",
+      "inputs": {
+        "segments": [],
+        "sentiment": "negative"
+      }
+    }
+  ],
+  "dispatch": {
+    "customerSegments": []
+  },
+  "startSequence": "start_sequence",
+  "sequences": {
+    "start_sequence": {
+      "actions": [
+        {
+          "branches": {},
+          "id": "abbot_notify_responders",
+          "type": "abbot.notify-responders",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Uh oh! ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.customer.name",
+                        "label": "Customer name from trigger"
+                      }
+                    },
+                    {
+                      "text": " appears to be unhappy. They posted this message: ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.message.url",
+                        "label": "Link to message from trigger"
+                      }
+                    },
+                    {
+                      "text": " ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "channel": "{{ outputs.channel.id }}",
+            "headline": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Unhappy Customer!",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
