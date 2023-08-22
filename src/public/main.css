@@ -13,3 +13,12 @@ article img.wide-image {
     left: inherit;
     right: 0;
 }
+
+.toc span.name-only {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
+
+.toc ul {
+   padding-bottom: 2rem;
+}
