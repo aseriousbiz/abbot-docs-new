@@ -30,7 +30,7 @@ Click on the Schedule trigger to choose and configure it. In the screenshot belo
 
 Click "Save" to save the step. Don't worry, nothing will happen until we publish the Playbook.
 
-After adding the trigger, you'll notice a Dispatching option. Select "Run once for each customer". This provides the option run this playbook for a specific set of customer segments. For more about setting up customers and customer segments, visit [customers setup](xref:customers.setup). In the screenshot below you can see this Playbook will only send the report to our esteemed Business and Enterprise customers.
+After adding the trigger, you'll notice a Dispatching option. Select "Run once for each customer". This provides the option run this playbook for a specific set of customer segments. For more about setting up customers and customer segments, see [Customer Management in Abbot](xref:customers). In the screenshot below you can see this Playbook will only send the report to our esteemed Business and Enterprise customers.
 
 <img src="/public/images/articles/playbooks.guides.sharing-usage-report/dispatching.png">
 
@@ -97,7 +97,7 @@ With this skill in place, go back to the Playbook, click "Add a step" and select
 
 <img src="/public/images/articles/playbooks.guides.sharing-usage-report/run-skill-step.png">
 
-## Send the report!
+## Send the report
 
 Now we'll add the last step to send the report to your customers. Click "Add an action" and select the "Send Message" action. For the "Channel or Thread" select "Channel from Trigger". This is the channel associated with the customer. In the body of the message we need to access the report that you added to `Bot.Outputs` in the skill. Once again, we'll use a Handlebars expression. Type `{` in the editor and you'll see a set of options. Since we created this output, we'll need to type in a custom expression. Type in `outputs.report` and hit the `TAB` key to complete it. You should see `{{ outputs.report }}` as the body of the message.
 

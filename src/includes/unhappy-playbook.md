@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file MD041 -->
+
 ## Specify the Playbook Trigger
 
 Before we specify what our Playbook should _do_, we need to tell Abbot _when_ the Playbook should run.

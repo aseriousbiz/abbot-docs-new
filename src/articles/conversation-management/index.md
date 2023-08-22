@@ -60,7 +60,6 @@ However, you can explicitly disable tracking for a given channel on the [Rooms p
 
     <img src="/public/images/articles/conversation-management/stop-tracking.png">
 
-
 ## Next Steps
 
 * [Conversation Timeline](xref:conversation-management.timeline)
