@@ -11,7 +11,7 @@ Each new thread from a customer is assigned to a conversation, or creates a new 
 
 > [!NOTE]
 > Before you can manage conversations with your customers in Slack, you need to install Abbot in to your Slack workspace.
-> See the [Quick Start](xref:quick-start) guide, or the [Slack Integration](xref:integrations.slack) documentation for more information.
+> See the [Quick Start](xref:quick-start.install) guide, or the [Slack Integration](xref:integrations.slack) documentation for more information.
 
 Currently, Abbot only supports conversation management in a Slack Connect channel shared with another organization, or in channels where there are guest users.
 When you create a shared channel and invite Abbot to it, you'll get a message asking you if you want to configure this room for conversation tracking.
@@ -46,6 +46,20 @@ These tabs let you view conversations in various states:
 
 These core tools give you and the rest of your team a quick at-a-glace interface to manage customer interactions on Slack.
 Abbot can do even more to help ensure your customers are happy!
+
+## Disabling Conversation Tracking
+
+By default, Abbot tracks conversations created by your customers in any channel Abbot is a member of.
+However, you can explicitly disable tracking for a given channel on the [Rooms page](https://app.ab.bot/settings/rooms).
+
+1. Click the ⚙️ Gear icon next to the room you wish to change settings for
+
+    <img src="/public/images/articles/conversation-management/gear-icon.png">
+
+2. Click "Stop Conversation Tracking".
+
+    <img src="/public/images/articles/conversation-management/stop-tracking.png">
+
 
 ## Next Steps
 

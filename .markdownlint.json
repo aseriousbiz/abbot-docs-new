@@ -2,6 +2,9 @@
     "line-length": false,
     "no-bare-urls": false,
     "fenced-code-language": false,
+    "ol-prefix": {
+        "style": "ordered"
+    },
     "ul-indent": {
         "indent": 4
     },
