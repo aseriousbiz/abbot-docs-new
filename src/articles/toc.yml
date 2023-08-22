@@ -17,6 +17,8 @@
 - name: Playbook Guides
 - name: Introduction
   href: ./playbooks/guides/index.md
+- name: Unhappy Customer Alert
+  href: ./playbooks/guides/alert-unhappy.md
 - name: Monitoring Customer Inactivity
   href: ./playbooks/guides/monitoring-customer-inactivity.md
 - name: Managing Trials
