@@ -16,10 +16,10 @@ You can also group customers in to [Segments](xref:customers.segments) to make i
     Click "Create customer" to create a customer.
     Later on, you can [customers for all your existing rooms](xref:customers.bulk-create), but for now let's start with a single one so you can see how it works.
 
-<img src="/public/images/articles/quick-start.customer-setup/customers-tab.png">
+    <img src="/public/images/articles/quick-start.customer-setup/customers-tab.png">
 
 2. Enter the name of the customer, and select the channel you want to associate with this customer. If you don't see the channel you want, you may need to [invite Abbot to the channel](xref:quick-start.tracking-conversations#configuring-a-customer-channel).
 
-<img src="/public/images/articles/quick-start.customer-setup/create-customer.png">
+    <img src="/public/images/articles/quick-start.customer-setup/create-customer.png">
 
 3. Click "Create customer" to create the customer record.
