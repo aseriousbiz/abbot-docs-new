@@ -22,3 +22,7 @@ article img.wide-image {
 .toc ul {
    padding-bottom: 2rem;
 }
+
+li.expanded ul {
+    padding-bottom: initial;
+}
