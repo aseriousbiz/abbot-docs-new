@@ -1,0 +1,90 @@
+{
+  "triggers": [
+    {
+      "id": "system_schedule",
+      "type": "system.schedule",
+      "inputs": {
+        "tz": "America/Los_Angeles",
+        "schedule": {
+          "hour": 9,
+          "type": "weekly",
+          "minute": 0,
+          "weekdays": [
+            "monday"
+          ]
+        }
+      }
+    }
+  ],
+  "dispatch": {
+    "type": "ByCustomer",
+    "customerSegments": [
+      "Subscribed"
+    ]
+  },
+  "startSequence": "start_sequence",
+  "sequences": {
+    "start_sequence": {
+      "actions": [
+        {
+          "branches": {},
+          "id": "system_continue_if_1",
+          "type": "system.continue-if",
+          "inputs": {
+            "left": "{{ trigger.outputs.channel.name }}",
+            "right": [
+              {
+                "label": "Enterprise",
+                "value": "Enterprise"
+              },
+              {
+                "label": "Business",
+                "value": "Business"
+              }
+            ],
+            "comparison": "Exists"
+          }
+        },
+        {
+          "branches": {},
+          "id": "system_skill",
+          "type": "system.skill",
+          "inputs": {
+            "skill": "customer-usage-stats",
+            "channel": "C0141FZEY56",
+            "arguments": "{{outputs.customer.id}}"
+          }
+        },
+        {
+          "branches": {},
+          "id": "slack_send_message",
+          "type": "slack.send-message",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "outputs.message",
+                        "label": "outputs.message"
+                      }
+                    },
+                    {
+                      "text": " ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "message_target": "{{ outputs.channel.id }}"
+          }
+        }
+      ]
+    }
+  }
+}
