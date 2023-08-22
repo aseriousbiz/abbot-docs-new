@@ -97,7 +97,7 @@ With this skill in place, go back to the Playbook, click "Add a step" and select
 
 <img src="/public/images/articles/playbooks.guides.sharing-usage-report/run-skill-step.png">
 
-## Send the report!
+## Send the report
 
 Now we'll add the last step to send the report to your customers. Click "Add an action" and select the "Send Message" action. For the "Channel or Thread" select "Channel from Trigger". This is the channel associated with the customer. In the body of the message we need to access the report that you added to `Bot.Outputs` in the skill. Once again, we'll use a Handlebars expression. Type `{` in the editor and you'll see a set of options. Since we created this output, we'll need to type in a custom expression. Type in `outputs.report` and hit the `TAB` key to complete it. You should see `{{ outputs.report }}` as the body of the message.
 

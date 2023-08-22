@@ -23,10 +23,6 @@
   href: ./playbooks/guides/index.md
 - name: Unhappy Customer Alert
   href: ./playbooks/guides/alert-unhappy.md
-- name: Monitoring Customer Inactivity
-  href: ./playbooks/guides/monitoring-customer-inactivity.md
-- name: Managing Trials
-  href: ./playbooks/guides/managing-trials.md
 - name: Customer Usage Report
   href: ./playbooks/guides/sharing-usage-report.md
 

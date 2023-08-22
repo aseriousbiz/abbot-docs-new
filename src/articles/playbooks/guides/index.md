@@ -8,18 +8,5 @@ Playbooks are a powerful tool for automating your Customer Success processes. So
 
 Well, in this set of guides, we provide a set of practical Playbooks you can start using right away!
 
-## Alert your team about an unhappy customer in Slack
-
-// TODO
-
-## Monitoring Customer Inactivity
-
-// TODO
-
-## Managing Trials in Slack
-
-// TODO
-
-## ./sharing-usage-report.md
-
-An advanced guide that shows you how to set up a scheduled Playbook to share usage stats with your customers every week
+* [Alert your team about an unhappy customer in Slack](xref:playbooks.guides.alert-unhappy)
+* [Share a Usage Report with your Customers](xref:playbooks.guides.sharing-usage-report)
