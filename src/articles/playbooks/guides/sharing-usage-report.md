@@ -39,7 +39,7 @@ After adding the trigger, you'll notice a Dispatching option. Select "Run once f
 This Playbook relies on having set up customers in Abbot and associating them with a Room (Slack channel). We want to filter out customers who do not have a channel associated with them.
 
 > [!TIP]
-> If you have a lot of Rooms in Abbot not associated with customers, visit the [Create Customers for Rooms](https://app.ab.bot/settings/rooms/createcustomers) page. You'll see a list of all customers without rooms and have the option to create customer records for each room.
+> If you have a lot of Rooms in Abbot not associated with customers, you can [create customers for existing Slack Connect channels](xref:customers.bulk-create).
 
 To do so, we'll add a "Continue If" step. Click "Add an action" and then filter the list to find the "Continue If" step. Click on the step to add and configure it.
 
