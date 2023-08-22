@@ -2,11 +2,13 @@
 - name: What is Abbot?
   href: ../index.md
 - name: Quick Start
-  href: quick-start.md
-
-- name: Customer Management
+  href: ./quick-start/01-install.md
+- name: Tracking Conversations
+  href: ./quick-start/02-tracking-conversations.md
 - name: Setting up Customers
-  href: customers/setup.md
+  href: ./quick-start/03-customer-setup.md
+- name: Create your first playbook
+  href: ./quick-start/04-playbooks.md
 
 - name: Playbooks
 - name: What are Playbooks?
@@ -25,6 +27,14 @@
   href: ./playbooks/guides/managing-trials.md
 - name: Customer Usage Stats
   href: ./playbooks/guides/sharing-usage-stats.md
+
+- name: Customer Management
+- name: Customer Management in Abbot
+  href: ./customers/index.md
+- name: Segments
+  href: ./customers/segments.md
+- name: Creating Customers in Bulk
+  href: ./customers/bulk-create.md
 
 - name: Conversation Management
 - name: What is Conversation Management?

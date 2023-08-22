@@ -18,14 +18,14 @@ Select "Create announcement" to open the "Create Announcement" dialog:
 
 <img src="/public/images/articles/announcements/create-announcement.png">
 
-* **Send as Abbot**: By default, Abbot "[Pseudo-impersonates](xref:integrations.slack.access#psuedo-impersonation)" your user and posts the announcement as you.
+* **Send as Abbot**: By default, Abbot "[Pseudo-impersonates](xref:integrations.slack.access#pseudo-impersonation)" your user and posts the announcement as you.
     If you want the announcement to come from Abbot, select this option.
     If you've customized your Abbot Bot, this will use the custom name and avatar you've configured.
 
 * **Message Delivery**: How do you want to choose the channels you'll send the message to?
     * **All Shared Channels** will send to all Slack Connect Channels in your workspace that Abbot is a member of.
     * **Pick Specific Channels** will allow you to select specific channels to send the message to.
-    * **Customer Segment** will allow you to select [Customer Segments](xref:customers.segments) to send the message to.
+    * **Customer Segment** will allow you to select Customer Segments to send the message to.
         Abbot will send the message to rooms associated with customers in the selected segments.
 
 * **Message Schedule**: When do you want to send the message?

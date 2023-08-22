@@ -8,7 +8,7 @@ Abbot integrates with Slack to monitor conversations in shared Slack Connect cha
 Slack integration is the key to Abbot's [conversation management](xref:conversation-management) features.
 
 > [!NOTE]
-> This article describes the Slack Integration in depth, but if you just want to install Abbot and get started, see the [Quick Start](xref:quick-start) guide.
+> This article describes the Slack Integration in depth, but if you just want to install Abbot and get started, see the [Quick Start](xref:quick-start.install) guide.
 
 ## Signing in to Slack
 

@@ -11,7 +11,7 @@ Each new thread from a customer is assigned to a conversation, or creates a new 
 
 > [!NOTE]
 > Before you can manage conversations with your customers in Slack, you need to install Abbot in to your Slack workspace.
-> See the [Quick Start](xref:quick-start) guide, or the [Slack Integration](xref:integrations.slack) documentation for more information.
+> See the [Quick Start](xref:quick-start.install) guide, or the [Slack Integration](xref:integrations.slack) documentation for more information.
 
 Currently, Abbot only supports conversation management in a Slack Connect channel shared with another organization, or in channels where there are guest users.
 When you create a shared channel and invite Abbot to it, you'll get a message asking you if you want to configure this room for conversation tracking.

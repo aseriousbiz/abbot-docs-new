@@ -1,5 +1,5 @@
 ---
-uid: converation-management.tags
+uid: conversation-management.tags
 ---
 
 # Conversation Tags
@@ -21,3 +21,6 @@ If you enable "AI Enhancements" in your [Organization settings](https://app.ab.b
 > If AI Enhancements are enabled, Abbot will send messages it receives to the Azure OpenAI service for analysis.
 > See Microsoft's [Azure OpenAI Frequently Asked Questions](https://learn.microsoft.com/en-us/azure/ai-services/openai/faq) for privacy and other information.
 
+Abbot will attempt to tag conversations with `sentiment` and `topic` tags.
+For example, conversations with negative sentiment will be tagged `sentiment:negative`, and conversations about billing will be tagged `topic:billing`.
+This is a preview feature, so please feel free to reach out to us at [help@ab.bot](mailto:help@ab.bot) or in Slack connect with feedback!

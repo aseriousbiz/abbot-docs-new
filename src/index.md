@@ -8,10 +8,6 @@ Abbot is a Copilot for Customer Success.
 We help you manage your customer relationships by monitoring your shared Slack channels and helping you respond to your customers quickly and effectively.
 Abbot gives you powerful tools for Customer Operations, within Slack and beyond.
 
-Here's a quick video overview of what Abbot can do:
-
-VIDEO
-
 ## Features
 
 * [Conversation Management](xref:conversation-management) helps you manage conversations with your customers in Slack. Track conversations like tickets, or funnel them to your existing ticketing system. Triage incoming requests, assign conversations, and track SLAs.
