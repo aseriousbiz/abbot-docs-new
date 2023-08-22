@@ -16,7 +16,7 @@
       "patterns": [
         "./src/**"
       ],
-      "extensions": "md,yml,yaml",
+      "extensions": "md,yml,yaml,tmpl",
       "quiet": false,
       "delay": 500
     }
