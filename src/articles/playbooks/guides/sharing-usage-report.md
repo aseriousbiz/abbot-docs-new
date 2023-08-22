@@ -69,7 +69,7 @@ if (Bot.Arguments is [{ Value: { } customerIdText}] && int.TryParse(customerIdTe
         }
     }
     
-    // Replace this line with your own API.
+    // TODO: Replace this line with your own API.
     var data = await Bot.Http.GetJsonAsAsync<MyUsageStats>(new Uri($"https://example.com/?customer={ourCustomerId}"));
     var report =  $"""
                     Hello {customer.Name}
