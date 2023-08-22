@@ -30,7 +30,7 @@ Click on the Schedule trigger to choose and configure it. In the screenshot belo
 
 Click "Save" to save the step. Don't worry, nothing will happen until we publish the Playbook.
 
-After adding the trigger, you'll notice a Dispatching option. Select "Run once for each customer". This provides the option run this playbook for a specific set of customer segments. For more about setting up customers and customer segments, visit [customers setup](xref:customers.setup). In the screenshot below you can see this Playbook will only send the report to our esteemed Business and Enterprise customers.
+After adding the trigger, you'll notice a Dispatching option. Select "Run once for each customer". This provides the option run this playbook for a specific set of customer segments. For more about setting up customers and customer segments, see [Customer Management in Abbot](xref:customers). In the screenshot below you can see this Playbook will only send the report to our esteemed Business and Enterprise customers.
 
 <img src="/public/images/articles/playbooks.guides.sharing-usage-report/dispatching.png">
 
