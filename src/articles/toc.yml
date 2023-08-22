@@ -14,6 +14,18 @@
 - name: Template Language
   href: ./playbooks/template-language.md
 
+- name: Playbook Guides
+- name: Introduction
+  href: ./playbooks/guides/index.md
+- name: Unhappy Customer Alert
+  href: ./playbooks/guides/alert-unhappy.md
+- name: Monitoring Customer Inactivity
+  href: ./playbooks/guides/monitoring-customer-inactivity.md
+- name: Managing Trials
+  href: ./playbooks/guides/managing-trials.md
+- name: Customer Usage Stats
+  href: ./playbooks/guides/sharing-usage-stats.md
+
 - name: Conversation Management
 - name: What is Conversation Management?
   href: ./conversation-management/index.md
