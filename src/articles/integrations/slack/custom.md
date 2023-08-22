@@ -36,11 +36,9 @@ This is the JSON that will be used to configure your Slack App.
 You don't need to save or edit this JSON, it's provided for your reference and so you review what permissions and features the custom app will use.
 
 Click the "Create App" button to be redirected to Slack's developer portal.
-The Manifest JSON will be prefilled and you'll be ready to create your app:
-
-<img class="limit-width" src="/public/images/articles/integrations.slack.custom/manifest-deploy-workspace.png">
-
-Slack will give you a chance to review the app's permissions and features:
+The Manifest JSON will be prefilled and you'll be ready to create your app.
+First, select the workspace you want to install the app in.
+Then, Slack will give you a chance to review the app's permissions and features:
 
 <img class="limit-width" src="/public/images/articles/integrations.slack.custom/manifest-deploy-review.png">
 

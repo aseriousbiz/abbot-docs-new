@@ -5,7 +5,11 @@ root_dir=$(cd $source_dir && cd ../../ && pwd)
 cd $root_dir
 source script/helpers/_utils.sh
 
-gh_group "Running Markdownlint..."
+gh_group "Installing NPM dependencies..."
+npm ci
+gh_endgroup
+
+gh_group "Running Linters..."
 npm run lint
 gh_endgroup
 
