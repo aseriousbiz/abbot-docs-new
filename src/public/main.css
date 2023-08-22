@@ -8,3 +8,37 @@ article img {
 article img.wide-image {
     max-width: 100%;
 }
+
+.dropdown-menu.show {
+    left: inherit;
+    right: 0;
+}
+
+.toc span.name-only {
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+}
+
+.toc ul {
+   padding-bottom: 2rem;
+}
+
+li.expanded ul {
+    padding-bottom: initial;
+}
+
+main.container-xxl {
+    padding-top: 1rem;
+}
+
+.toc form.filter {
+    margin: 0.5rem;
+}
+
+.toc form.filter>input {
+   font-size: 0.8rem; 
+}
+
+.toc>.no-result {
+    padding: 1rem;
+}
