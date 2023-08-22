@@ -34,4 +34,5 @@ To assign a new user, just start typing in the "Search for a user…" box, and t
 To remove a user, click the "Remove" button.
 
 ## Escalation Responders
-Escalation Responders are a special kind of responder. They are agents who get notified when a deadline has passed, in addition to First Responders. 
+
+Escalation Responders are a special kind of responder. They are agents who get notified when a deadline has passed, in addition to First Responders.

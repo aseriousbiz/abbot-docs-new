@@ -81,6 +81,6 @@ The company must already exist in your HubSpot account to be linked:
 
 <img src="/public/images/articles/integrations.hubspot/link-company.png">
 
-Click the organization in the dropdown and it will be linked to the room. 
-Now any tickets opened from conversations in that room will automatically be associated with that HubSpot company. 
+Click the organization in the dropdown and it will be linked to the room.
+Now any tickets opened from conversations in that room will automatically be associated with that HubSpot company.
 You can change the linked organization, or remove the link using the "Remove this link" button.

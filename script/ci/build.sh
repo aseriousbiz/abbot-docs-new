@@ -5,6 +5,10 @@ root_dir=$(cd $source_dir && cd ../../ && pwd)
 cd $root_dir
 source script/helpers/_utils.sh
 
+gh_group "Running Markdownlint..."
+npm run lint
+gh_endgroup
+
 gh_group "Installing docfx..."
 dotnet tool update -g docfx
 gh_endgroup

@@ -65,7 +65,6 @@ When a Zendesk Ticket is marked as `Solved`, the linked Abbot `Conversation` wil
 
 You can configure a Zendesk organization for each room Abbot is monitoring by going to the [Rooms list](https://app.ab.bot/settings/rooms). Find the room you want to configure, and select the "Settings" button:
 
-
 Then, go to "Zendesk Settings" and start typing the name of an organization in your Zendesk account. The organization must already have been created in your Zendesk account:
 
 <img class="wide-image" src="/public/images/articles/integrations.zendesk/select-organization.png">

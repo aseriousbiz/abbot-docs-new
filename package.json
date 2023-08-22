@@ -4,6 +4,8 @@
   "description": "Abbot (new) docs site",
   "main": "index.js",
   "scripts": {
+    "lint": "node script/lint.js",
+    "build": "dotnet tool run docfx build src/docfx.json",
     "start": "npm-watch serve",
     "serve": "script/helpers/run-server"
   },
@@ -18,6 +20,8 @@
     }
   },
   "devDependencies": {
+    "glob": "^10.3.3",
+    "markdownlint": "^0.30.0",
     "npm-watch": "^0.11.0"
   }
 }
