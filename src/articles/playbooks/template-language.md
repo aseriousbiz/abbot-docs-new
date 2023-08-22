@@ -11,7 +11,7 @@ Here, we'll focus on the basics and cover the variables that Abbot makes availab
 ## Where can you use templates?
 
 Any Playbook step that accepts text input can include a template.
-For example, the "Message" input for the "Send Message" step: 
+For example, the "Message" input for the "Send Message" step:
 
 <img src="/public/images/articles/playbooks.template-language/send-message.message-input.png">
 
