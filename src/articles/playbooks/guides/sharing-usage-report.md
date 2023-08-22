@@ -10,7 +10,7 @@ Sharing a usage report with customers is a fantastic way to create proactive eng
 
 ## Create the Playbook
 
-As with every guide, start by going to the [Playbooks page](https://app.ab.bot/playbooks) and click [Create](https://app.ab.bot/playbooks/create) to create a Playbook. Give it a name and description and click "Create Playbook" and you'll end up on the Playbook Builder canvas.
+Start by going to the [Playbooks page](https://app.ab.bot/playbooks) and click [Create](https://app.ab.bot/playbooks/create) to create a Playbook. Give it a name and description and click "Create Playbook" and you'll end up on the Playbook Builder canvas.
 
 <img src="/public/images/articles/playbooks.guides.sharing-usage-report/playbook-builder-canvas.png">
 
