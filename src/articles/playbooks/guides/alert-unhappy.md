@@ -7,9 +7,7 @@ uid: playbooks.guides.alert-unhappy
 This guide shows you how to build a Playbook to respond to negative sentiment in Slack.
 Alerting your team when customers are unhappy helps you reduce churn and improve customer satisfaction.
 
-## Create the Playbook
-
-Start by going to the [Playbooks page](https://app.ab.bot/playbooks) and click [Create](https://app.ab.bot/playbooks/create) to create a Playbook. Give it a name and description and click "Create Playbook" and you'll end up on the Playbook Builder canvas.
+[!INCLUDE [create-playbook](../../../includes/create-playbook.md)]
 
 > [!NOTE]
 > You can <a href="/public/playbooks/playbook.unhappy-customer-alert.json" download>download the playbook referenced in this guide</a> and [import it](xref:playbooks.import) in to your workspace.
