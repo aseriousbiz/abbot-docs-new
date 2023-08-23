@@ -23,6 +23,8 @@
   href: ./playbooks/guides/index.md
 - name: Unhappy Customer Alert
   href: ./playbooks/guides/alert-unhappy.md
+- name: Discount Code Approval
+  href: ./playbooks/guides/approval-workflow.md
 - name: Customer Inactivity Alert
   href: ./playbooks/guides/customer-inactivity-alert.md
 - name: Customer Usage Report
