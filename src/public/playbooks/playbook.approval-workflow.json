@@ -1,0 +1,158 @@
+{
+  "triggers": [
+    {
+      "id": "abbot_conversation_sentiment",
+      "type": "abbot.conversation-sentiment",
+      "inputs": {
+        "segments": [],
+        "sentiment": "negative"
+      }
+    }
+  ],
+  "dispatch": {
+    "customerSegments": []
+  },
+  "startSequence": "start_sequence",
+  "sequences": {
+    "start_sequence": {
+      "actions": [
+        {
+          "branches": {
+            "denied": "slack_request_approvers:denied",
+            "approved": "slack_request_approvers:approved"
+          },
+          "id": "slack_request_approvers",
+          "type": "slack.request-approvers",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Uh oh, the customer ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.customer.name",
+                        "label": "Customer name from trigger"
+                      }
+                    },
+                    {
+                      "text": " seems unhappy in ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "channel",
+                      "attrs": {
+                        "id": "{{ outputs.channel.id }}",
+                        "label": "Channel from outputs"
+                      }
+                    },
+                    {
+                      "text": ".",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph"
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Should I send them the ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "IM_SORRY",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "code"
+                        }
+                      ]
+                    },
+                    {
+                      "text": " discount code?",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph"
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Here's the message: ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.message.url",
+                        "label": "Link to message from trigger"
+                      }
+                    },
+                    {
+                      "text": ".",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "approvers": [
+              "U012LKJFG0P",
+              "U01316DKDT5"
+            ]
+          }
+        }
+      ]
+    },
+    "slack_request_approvers:denied": {
+      "actions": []
+    },
+    "slack_request_approvers:approved": {
+      "actions": [
+        {
+          "branches": {},
+          "id": "slack_send_message",
+          "type": "slack.send-message",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Sorry you're running into problems using our product. We're working to make the experience better. In the meanwhile, please enjoy this 20% off coupon code: ",
+                      "type": "text"
+                    },
+                    {
+                      "text": "WE_ARE_SORRY",
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "code"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "message_target": "{{ trigger.outputs.message.url }}"
+          }
+        }
+      ]
+    }
+  }
+}
