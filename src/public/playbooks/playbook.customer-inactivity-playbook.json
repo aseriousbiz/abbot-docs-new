@@ -1,0 +1,114 @@
+{
+  "triggers": [
+    {
+      "id": "system_schedule",
+      "type": "system.schedule",
+      "inputs": {
+        "tz": "America/Los_Angeles",
+        "schedule": {
+          "hour": 12,
+          "type": "daily",
+          "minute": 0
+        }
+      }
+    }
+  ],
+  "dispatch": {
+    "type": "ByCustomer",
+    "customerSegments": [
+      "Business",
+      "Enterprise"
+    ]
+  },
+  "startSequence": "start_sequence",
+  "sequences": {
+    "start_sequence": {
+      "actions": [
+        {
+          "branches": {},
+          "id": "system_continue_if",
+          "type": "system.continue-if",
+          "inputs": {
+            "left": "{{ outputs.channel.id }}",
+            "comparison": "Exists"
+          }
+        },
+        {
+          "branches": {},
+          "id": "system_continue_if_1",
+          "type": "system.continue-if",
+          "inputs": {
+            "left": "{{ outputs.customer.last_activity_days }}",
+            "right": "7",
+            "comparison": "Equals"
+          }
+        },
+        {
+          "branches": {},
+          "id": "abbot_notify_responders",
+          "type": "abbot.notify-responders",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "The customer ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.customer.name",
+                        "label": "Customer name from trigger"
+                      }
+                    },
+                    {
+                      "text": " has not been active in ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "channel",
+                      "attrs": {
+                        "id": "{{ outputs.channel.id }}",
+                        "label": "Channel from outputs"
+                      }
+                    },
+                    {
+                      "text": " for 7 days.",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "channel": "{{ outputs.channel.id }}",
+            "headline": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "emoji",
+                      "attrs": {
+                        "id": "warning",
+                        "label": "⚠️"
+                      }
+                    },
+                    {
+                      "text": " Inactive customer",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

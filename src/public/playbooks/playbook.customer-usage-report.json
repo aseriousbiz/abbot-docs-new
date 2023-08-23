@@ -51,8 +51,8 @@
           "type": "system.skill",
           "inputs": {
             "skill": "customer-usage-stats",
-            "channel": "C0141FZEY56",
-            "arguments": "{{outputs.customer.id}}"
+            "channel": "C01FG38NWH1",
+            "arguments": "{{ outputs.customer.id }}"
           }
         },
         {
@@ -69,8 +69,8 @@
                     {
                       "type": "handlebars",
                       "attrs": {
-                        "id": "outputs.message",
-                        "label": "outputs.message"
+                        "id": "outputs.reply",
+                        "label": "outputs.reply"
                       }
                     },
                     {
