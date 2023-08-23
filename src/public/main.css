@@ -52,3 +52,7 @@ main.container-xxl {
 .logo {
     width: 40px;
 }
+
+.edit-link {
+    font-size: .8rem;
+}
