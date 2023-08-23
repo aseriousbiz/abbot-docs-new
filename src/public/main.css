@@ -40,6 +40,34 @@ main.container-xxl {
    font-size: 0.8rem; 
 }
 
-.toc>.no-result {
+.toc > .no-result {
     padding: 1rem;
+}
+
+article ol {
+    position: relative;
+    list-style: none;
+    counter-reset: item;
+}
+
+article ol > li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+article ol > li:before {
+    margin-right: 10px;
+    content: counter(item);
+    font-weight: bold;
+    font-size: 0.75em;
+    background: #000;
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
