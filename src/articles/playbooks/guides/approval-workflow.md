@@ -29,7 +29,7 @@ This playbook guide shows you how to build a Playbook to request approval from y
 The Playbook will now run whenever we detect a message with negative sentiment in any of your tracked rooms.
 Next, we'll configure _what_ the Playbook should do.
 
-## Add an Action to
+## Add Actions
 
 Actions are the steps taken by the Playbook when it runs. There are lots of actions available, and we're adding more all the time.
 For now, we'll just add a simple action to send a message to request approval.
@@ -42,7 +42,7 @@ For now, we'll just add a simple action to send a message to request approval.
 
     <img src="/public/images/articles/playbooks.approval-workflow/add-request-approval.png">
 
-3. In the "Approvers" list, select the list of approvers. This list is populated by members of the Abbot "Agents" role.
+3. In the "Approvers" list, select the list of approvers. Only users who have been assigned as "Agents" in Abbot can be approvers.
 
     <img src="/public/images/articles/playbooks.approval-workflow/select-approvers.png">
 
