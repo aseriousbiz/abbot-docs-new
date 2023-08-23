@@ -43,3 +43,12 @@ main.container-xxl {
 .toc>.no-result {
     padding: 1rem;
 }
+
+.navbar-brand {
+    margin-left: 0.7rem;
+    margin-right: 0.5rem;
+}
+
+.logo {
+    width: 40px;
+}
