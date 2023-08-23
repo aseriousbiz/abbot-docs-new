@@ -69,8 +69,8 @@
                     {
                       "type": "handlebars",
                       "attrs": {
-                        "id": "outputs.reply",
-                        "label": "outputs.reply"
+                        "id": "outputs.report",
+                        "label": "outputs.report"
                       }
                     },
                     {

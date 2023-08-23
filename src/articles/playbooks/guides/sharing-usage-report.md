@@ -24,7 +24,7 @@ Sharing a usage report with customers is a fantastic way to create proactive eng
 
     <img src="/public/images/articles/playbooks.guides.sharing-usage-report/add-trigger-panel.png">
 
-3. Click on the Schedule trigger to select it. Click on the "Schedule" drop down and select "Weekly".
+3. Click on the Schedule trigger to select it. Click on the "Schedule" drop down and select "Every week at…".
 
    <img src="/public/images/articles/playbooks.guides.sharing-usage-report/configure-schedule.png">
 
