@@ -9,7 +9,7 @@
     "lint:imgs": "script/helpers/check-img-tags.sh",
     "build": "dotnet tool run docfx build src/docfx.json",
     "start": "npm-watch serve",
-    "serve": "script/helpers/run-server"
+    "serve": "dotnet tool run docfx build src/docfx.json --serve"
   },
   "watch": {
     "serve": {

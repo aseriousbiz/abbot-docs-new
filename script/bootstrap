@@ -9,4 +9,7 @@ if ! type dotnet > /dev/null; then
     fatal "dotnet is not installed. Please install it from https://dotnet.microsoft.com"
 fi
 
+dotnet tool restore
+npm ci
+
 echo "You're good to go!"
