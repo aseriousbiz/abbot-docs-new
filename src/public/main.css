@@ -44,6 +44,28 @@ main.container-xxl {
     padding: 1rem;
 }
 
+@media only screen and (min-width: 768px)  {
+    .navbar-brand {
+        margin-left: 0.7rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.logo {
+    width: 40px;
+}
+
+.edit-link {
+    font-size: 0.8rem;
+}
+
+footer {
+    color: #777;
+    font-size: 0.8rem;
+    padding-left: 0.8rem !important; 
+    height: initial !important;
+}
+
 article ol {
     position: relative;
     list-style: none;
