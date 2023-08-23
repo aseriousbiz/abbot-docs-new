@@ -18,7 +18,7 @@ Sharing a usage report with customers is a fantastic way to create proactive eng
 
 1. Click the "Add a trigger" button on the Playbook editor page to add a trigger.
 
-    <img src="/public/images/articles/playbooks.guides.sharing-usage-report/playbook-builder-canvas.png">
+    <img src="/public/images/articles/quick-start.playbooks/add-trigger-button.png">
 
 2. In the "Add Trigger" dialog, type "Sche" to filter the list and click the "Schedule" trigger.
 
