@@ -108,7 +108,7 @@ With this skill in place, go back to the Playbook, click "Add a step" and select
 
 ## Send the report
 
-Now we'll add the last step to send the report to your customers. 
+Now we'll add the last step to send the report to your customers.
 
 1. Click "Add an action" and select the "Send Message" action.
 

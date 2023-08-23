@@ -41,7 +41,6 @@ Fortunately Abbot can monitor your customer channels for inactivity using this P
 
 <img src="/public/images/articles/playbooks.guides.customer-inactivity-alert/dispatching.png">
 
-
 ## Add an Action
 
 Actions are the steps taken by the Playbook when it runs. There are lots of actions available, and we're adding more all the time.
