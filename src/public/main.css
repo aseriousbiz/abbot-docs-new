@@ -54,5 +54,12 @@ main.container-xxl {
 }
 
 .edit-link {
-    font-size: .8rem;
+    font-size: 0.8rem;
+}
+
+footer {
+    color: #777;
+    font-size: 0.8rem;
+    padding-left: 0.8rem !important; 
+    height: initial !important;
 }
