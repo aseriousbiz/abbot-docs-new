@@ -44,9 +44,11 @@ main.container-xxl {
     padding: 1rem;
 }
 
-.navbar-brand {
-    margin-left: 0.7rem;
-    margin-right: 0.5rem;
+@media only screen and (min-width: 768px)  {
+    .navbar-brand {
+        margin-left: 0.7rem;
+        margin-right: 0.5rem;
+    }
 }
 
 .logo {
