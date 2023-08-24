@@ -18,9 +18,9 @@ Sharing a usage report with customers is a fantastic way to create proactive eng
 
 1. Click the "Add a trigger" button on the Playbook editor page to add a trigger.
 
-    <img src="/public/images/articles/playbooks.guides.sharing-usage-report/playbook-builder-canvas.png">
+    <img src="/public/images/articles/quick-start.playbooks/add-trigger-button.png">
 
-2. In the "Add Trigger" dialog, type "Sche" to filter the list and click the "Scehdule" trigger.
+2. In the "Add Trigger" dialog, type "Sche" to filter the list and click the "Schedule" trigger.
 
     <img src="/public/images/articles/playbooks.guides.sharing-usage-report/add-trigger-panel.png">
 
@@ -108,7 +108,7 @@ With this skill in place, go back to the Playbook, click "Add a step" and select
 
 ## Send the report
 
-Now we'll add the last step to send the report to your customers. 
+Now we'll add the last step to send the report to your customers.
 
 1. Click "Add an action" and select the "Send Message" action.
 

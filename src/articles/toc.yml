@@ -27,6 +27,8 @@
   href: ./playbooks/guides/approval-workflow.md
 - name: Customer Inactivity Alert
   href: ./playbooks/guides/customer-inactivity-alert.md
+- name: Customer Satisfaction Poll
+  href: ./playbooks/guides/csat-poll.md
 - name: Customer Usage Report
   href: ./playbooks/guides/sharing-usage-report.md
 

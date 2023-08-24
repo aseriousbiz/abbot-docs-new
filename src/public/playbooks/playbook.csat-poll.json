@@ -1,0 +1,231 @@
+{
+  "triggers": [
+    {
+      "id": "zendesk_ticket_link_status_changed",
+      "type": "zendesk.ticket-link-status-changed",
+      "inputs": {
+        "segments": [
+          {
+            "label": "TestingCustomer",
+            "value": "TestingCustomer"
+          }
+        ]
+      }
+    }
+  ],
+  "dispatch": {
+    "customerSegments": []
+  },
+  "startSequence": "start_sequence",
+  "sequences": {
+    "start_sequence": {
+      "actions": [
+        {
+          "branches": {},
+          "id": "system_continue_if",
+          "type": "system.continue-if",
+          "inputs": {
+            "left": "{{ trigger.outputs.ticket.zendesk.status }}",
+            "right": [
+              {
+                "label": "Solved",
+                "value": "Solved"
+              }
+            ],
+            "comparison": "Any"
+          }
+        },
+        {
+          "branches": {},
+          "id": "slack_send_poll",
+          "type": "slack.send-poll",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "It looks like your ticket was completed. Were you satisfied with the resolution?",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "options": {
+              "name": "Customer Satisfaction",
+              "preset": "likert-5-satisfied",
+              "options": [
+                {
+                  "label": "Very satisfied",
+                  "value": "5"
+                },
+                {
+                  "label": "Satisfied",
+                  "value": "4"
+                },
+                {
+                  "label": "Neutral",
+                  "value": "3"
+                },
+                {
+                  "label": "Unsatisfied",
+                  "value": "2"
+                },
+                {
+                  "label": "Very unsatisfied",
+                  "value": "1"
+                }
+              ]
+            },
+            "message_target": "{{ trigger.outputs.message.url }}"
+          }
+        },
+        {
+          "branches": {
+            "true": "system_if:true",
+            "false": "system_if:false"
+          },
+          "id": "system_if",
+          "type": "system.if",
+          "inputs": {
+            "left": "{{ outputs.poll_response.value }}",
+            "right": [
+              {
+                "label": "Unsatisfied",
+                "value": "2"
+              },
+              {
+                "label": "Very unsatisfied",
+                "value": "1"
+              }
+            ],
+            "comparison": "Any"
+          }
+        }
+      ]
+    },
+    "system_if:true": {
+      "actions": [
+        {
+          "branches": {},
+          "id": "abbot_notify_responders",
+          "type": "abbot.notify-responders",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.customer.name",
+                        "label": "Customer name from trigger"
+                      }
+                    },
+                    {
+                      "text": " is unhappy with the resolution from a recent ticket: ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.ticket.url",
+                        "label": "Link to ticket from trigger"
+                      }
+                    },
+                    {
+                      "text": ".",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph"
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "The conversation related to the ticket can be found here: ",
+                      "type": "text"
+                    },
+                    {
+                      "type": "handlebars",
+                      "attrs": {
+                        "id": "trigger.outputs.message.url",
+                        "label": "Link to message from trigger"
+                      }
+                    },
+                    {
+                      "text": " ",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "channel": "{{ outputs.channel.id }}",
+            "headline": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "emoji",
+                      "attrs": {
+                        "id": "rotating_light",
+                        "label": "🚨"
+                      }
+                    },
+                    {
+                      "text": " Dissatisfied customer alert",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "system_if:false": {
+      "actions": [
+        {
+          "branches": {},
+          "id": "slack_send_message",
+          "type": "slack.send-message",
+          "inputs": {
+            "mrkdwn": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Thank you for your feedback!",
+                      "type": "text"
+                    }
+                  ]
+                }
+              ]
+            },
+            "message_target": "{{ trigger.outputs.message.url }}"
+          }
+        },
+        {
+          "branches": {},
+          "id": "system_complete_playbook",
+          "type": "system.complete-playbook",
+          "inputs": {}
+        }
+      ]
+    }
+  }
+}
